@@ -1,3 +1,5 @@
+import { INVALID_CLASS } from './constants.js';
+
 export function initLogin() {
     const user = [
         {
@@ -27,6 +29,7 @@ export function initLogin() {
     const loginPassword = document.getElementById('loginPasswordInput');
     const loginBtn = document.getElementById('loginBtn');
     const loginForm = document.getElementById('loginForm');
+    let message = null;
 
     loginEmail.addEventListener('input', eventHandler);
     loginPassword.addEventListener('input', eventHandler);
